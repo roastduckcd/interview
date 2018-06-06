@@ -49,3 +49,33 @@ void usingDefine() {
 
 }
 
+void usingConst() {
+
+    // 常整形
+    const int a = 10;
+    int const b = 10;
+
+        // 常整形指针:指针指向的值不可变，指针可变, *p 是取值，当然值不变
+    int c = 20;
+    int const *p = &c;
+    const int *q = &c;
+//    *p = 30; 不可改
+    int d = 30;
+    p = &d;
+
+        // 整形常指针:指针指向的值可变，但是指针不能变
+    int e = 6;
+    int * const m = &e;
+    *m = 66;
+//    int f = 666;
+//    m = &f;
+
+        // 常整形常指针:指针指向的值不变，指针也不能变
+    int g = 8;
+    int const * const n = &g;
+//    *n = 88;
+//    int h = 888;
+//    n = &h;
+
+}
+
