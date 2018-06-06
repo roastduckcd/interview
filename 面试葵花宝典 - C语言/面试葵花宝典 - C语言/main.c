@@ -7,6 +7,9 @@
 //
 
 #include <stdio.h>
+
+#include "DefinePointerVariable.h"
+
 // 最好将参数和整个宏都括起来
 // 不要使用分号
 #define MIN(A, B) (((A) < (B)) ? (A) : (B))
@@ -16,7 +19,7 @@ void usingDefine(void);
 int main(int argc, const char * argv[]) {
     // insert code here...
 
-    usingDefine();
+    usingFunctionPointer();
     return 0;
 }
 

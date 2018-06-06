@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6167030620C7AF4100EF9F22 /* DefinePointerVariable.c in Sources */ = {isa = PBXBuildFile; fileRef = 6167030520C7AF4100EF9F22 /* DefinePointerVariable.c */; };
 		61BBE08B20C77F4500DC3F4F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 61BBE08A20C77F4500DC3F4F /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6167030520C7AF4100EF9F22 /* DefinePointerVariable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DefinePointerVariable.c; sourceTree = "<group>"; };
+		6167030720C7B7A500EF9F22 /* DefinePointerVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefinePointerVariable.h; sourceTree = "<group>"; };
 		61BBE08720C77F4500DC3F4F /* 面试葵花宝典 - C语言 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "面试葵花宝典 - C语言"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61BBE08A20C77F4500DC3F4F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				61BBE08A20C77F4500DC3F4F /* main.c */,
+				6167030720C7B7A500EF9F22 /* DefinePointerVariable.h */,
+				6167030520C7AF4100EF9F22 /* DefinePointerVariable.c */,
 			);
 			path = "面试葵花宝典 - C语言";
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6167030620C7AF4100EF9F22 /* DefinePointerVariable.c in Sources */,
 				61BBE08B20C77F4500DC3F4F /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
