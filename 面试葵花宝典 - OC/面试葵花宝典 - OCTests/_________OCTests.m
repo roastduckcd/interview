@@ -1,7 +1,7 @@
 //___FILEHEADER___
 
 #import <XCTest/XCTest.h>
-#import "Fanshejizhi.h"
+#import "PassingStruct.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : XCTestCase
 
@@ -22,8 +22,9 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    Fanshejizhi *fan = [[Fanshejizhi alloc] init];
-    [fan usingClassFromString];
+    PassingStruct *p = [[PassingStruct alloc] init];
+    [p call];
+
 }
 
 - (void)testPerformanceExample {
