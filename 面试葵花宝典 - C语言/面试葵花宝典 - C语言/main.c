@@ -9,20 +9,27 @@
 #include <stdio.h>
 
 #include "DefinePointerVariable.h"
+#include "ArrayAndPointer.h"
 
 // 最好将参数和整个宏都括起来
 // 不要使用分号
 #define MIN(A, B) (((A) < (B)) ? (A) : (B))
 
 void usingDefine(void);
+void usingConst(void);
+void sizeOfPoint(void);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-
-    usingFunctionPointer();
+    arrayNameAndPointer();
     return 0;
 }
 
+/**
+ 宏定义的副作用：因为近视简单替换，需要注意自增、减，边界效应等
+ 最好将参数和整个宏都括起来
+ 不要使用分号
+ */
 void usingDefine() {
 
 //    int a = 1;
@@ -52,6 +59,9 @@ void usingDefine() {
 
 }
 
+/**
+ const 常量关键字的使用情景
+ */
 void usingConst() {
 
     // 常整形
@@ -82,3 +92,15 @@ void usingConst() {
 
 }
 
+/**
+ 验证指针的大小
+ */
+void sizeOfPoint() {
+    int a = 10;
+    int *p1 = &a;
+
+    double b = 100.32;
+    double *p2 = &b;
+    printf("p1 size = %lu\n", sizeof(p1));
+    printf("p2 size = %lu\n", sizeof(p2));
+}
