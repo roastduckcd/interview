@@ -10,6 +10,7 @@
 
 #include "DefinePointerVariable.h"
 #include "ArrayAndPointer.h"
+#include "PointerCalculating.h"
 
 // 最好将参数和整个宏都括起来
 // 不要使用分号
@@ -21,7 +22,7 @@ void sizeOfPoint(void);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    arrayNameAndPointer();
+    calculatePointerAndMemory();
     return 0;
 }
 

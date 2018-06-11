@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61274C2E20CE01810009D71F /* PointerCalculating.c in Sources */ = {isa = PBXBuildFile; fileRef = 61274C2D20CE01810009D71F /* PointerCalculating.c */; };
 		615B32E020C8D06A003A1390 /* ArrayAndPointer.c in Sources */ = {isa = PBXBuildFile; fileRef = 615B32DF20C8D06A003A1390 /* ArrayAndPointer.c */; };
 		6167030620C7AF4100EF9F22 /* DefinePointerVariable.c in Sources */ = {isa = PBXBuildFile; fileRef = 6167030520C7AF4100EF9F22 /* DefinePointerVariable.c */; };
 		61BBE08B20C77F4500DC3F4F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 61BBE08A20C77F4500DC3F4F /* main.c */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		61274C2C20CE01810009D71F /* PointerCalculating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointerCalculating.h; sourceTree = "<group>"; };
+		61274C2D20CE01810009D71F /* PointerCalculating.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PointerCalculating.c; sourceTree = "<group>"; };
 		615B32DE20C8D06A003A1390 /* ArrayAndPointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayAndPointer.h; sourceTree = "<group>"; };
 		615B32DF20C8D06A003A1390 /* ArrayAndPointer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ArrayAndPointer.c; sourceTree = "<group>"; };
 		6167030520C7AF4100EF9F22 /* DefinePointerVariable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DefinePointerVariable.c; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				6167030520C7AF4100EF9F22 /* DefinePointerVariable.c */,
 				615B32DE20C8D06A003A1390 /* ArrayAndPointer.h */,
 				615B32DF20C8D06A003A1390 /* ArrayAndPointer.c */,
+				61274C2C20CE01810009D71F /* PointerCalculating.h */,
+				61274C2D20CE01810009D71F /* PointerCalculating.c */,
 			);
 			path = "面试葵花宝典 - C语言";
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6167030620C7AF4100EF9F22 /* DefinePointerVariable.c in Sources */,
+				61274C2E20CE01810009D71F /* PointerCalculating.c in Sources */,
 				615B32E020C8D06A003A1390 /* ArrayAndPointer.c in Sources */,
 				61BBE08B20C77F4500DC3F4F /* main.c in Sources */,
 			);
