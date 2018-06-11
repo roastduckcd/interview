@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "DeleteFilesHierarchily.h"
+
 
 @interface ViewController ()
 
@@ -16,6 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    DeleteFilesHierarchily *dd = [[DeleteFilesHierarchily alloc] init];
+    [dd deleteFilesAtPath:@""];
+
 }
 
 

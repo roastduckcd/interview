@@ -1,7 +1,6 @@
 //___FILEHEADER___
 
 #import <XCTest/XCTest.h>
-#import "PassingStruct.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : XCTestCase
 
@@ -22,9 +21,6 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    PassingStruct *p = [[PassingStruct alloc] init];
-    [p call];
-
 }
 
 - (void)testPerformanceExample {
