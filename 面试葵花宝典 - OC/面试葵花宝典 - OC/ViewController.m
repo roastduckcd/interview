@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DeleteFilesHierarchily.h"
+#import "RunloopTest.h"
 
 
 @interface ViewController ()
@@ -22,7 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    RunloopTest *rlop = [[RunloopTest alloc] init];
+    // 此处runloop的启动阻塞了主线程
+    [rlop usingRunloop];
 }
 
 /**
@@ -57,5 +60,9 @@
     sender.selected = !sender.isSelected;
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"touches begin");
+}
 
 @end

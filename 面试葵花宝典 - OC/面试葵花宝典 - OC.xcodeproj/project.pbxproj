@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6148ABD420CF98FB00C98913 /* RunloopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148ABD320CF98FB00C98913 /* RunloopTest.m */; };
 		6170E73D20C8FCCE0078A329 /* PassingStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 6170E73C20C8FCCE0078A329 /* PassingStruct.m */; };
 		6170E74120C9106B0078A329 /* DeleteFilesHierarchily.m in Sources */ = {isa = PBXBuildFile; fileRef = 6170E74020C9106B0078A329 /* DeleteFilesHierarchily.m */; };
 		619E9C5220C8DC3900AC61EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 619E9C5120C8DC3900AC61EA /* AppDelegate.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6148ABD220CF98FB00C98913 /* RunloopTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopTest.h; sourceTree = "<group>"; };
+		6148ABD320CF98FB00C98913 /* RunloopTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopTest.m; sourceTree = "<group>"; };
 		6170E73B20C8FCCE0078A329 /* PassingStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassingStruct.h; sourceTree = "<group>"; };
 		6170E73C20C8FCCE0078A329 /* PassingStruct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassingStruct.m; sourceTree = "<group>"; };
 		6170E73F20C9106B0078A329 /* DeleteFilesHierarchily.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteFilesHierarchily.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				6170E73C20C8FCCE0078A329 /* PassingStruct.m */,
 				6170E73F20C9106B0078A329 /* DeleteFilesHierarchily.h */,
 				6170E74020C9106B0078A329 /* DeleteFilesHierarchily.m */,
+				6148ABD220CF98FB00C98913 /* RunloopTest.h */,
+				6148ABD320CF98FB00C98913 /* RunloopTest.m */,
 				619E9C8220C8DCA500AC61EA /* sources */,
 			);
 			path = "面试葵花宝典 - OC";
@@ -288,6 +293,7 @@
 				619E9C5520C8DC3900AC61EA /* ViewController.m in Sources */,
 				619E9C6020C8DC3A00AC61EA /* main.m in Sources */,
 				619E9C5220C8DC3900AC61EA /* AppDelegate.m in Sources */,
+				6148ABD420CF98FB00C98913 /* RunloopTest.m in Sources */,
 				619E9C8520C8DD2000AC61EA /* Fanshejizhi.m in Sources */,
 				6170E73D20C8FCCE0078A329 /* PassingStruct.m in Sources */,
 				6170E74120C9106B0078A329 /* DeleteFilesHierarchily.m in Sources */,
