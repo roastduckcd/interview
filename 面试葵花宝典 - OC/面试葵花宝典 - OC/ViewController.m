@@ -7,9 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "ARCRetainCount.h"
 
-
+__weak id ref = nil;
 @interface ViewController ()
 
 @property (nonatomic, strong) UIButton *strongBtn;
@@ -22,9 +21,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    ARCRetainCount *test = [[ARCRetainCount alloc] init];
-//    [test getRetainCountOfMutable];
-    [test getRetainCountOfImmutable];
+    NSString *str = [NSString stringWithFormat:@"hello beauty"];
+    ref = str;
+    NSLog(@"%@ === %@", ref, str);
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // weak 引用的局部变量在此处仍指向对象
+    // 按理 应该在 viewDidLoad 函数结束就被释放。
+    // 可以证明非显式autorelease对象是会延迟释放，一般来说是在当前runloop的迭代结束时。
+    NSLog(@"%@", ref);
+}
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSLog(@"%@", ref);
 }
 
 /**
