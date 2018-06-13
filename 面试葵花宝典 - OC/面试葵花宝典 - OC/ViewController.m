@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "DeleteFilesHierarchily.h"
-#import "RunloopTest.h"
+#import "ARCRetainCount.h"
 
 
 @interface ViewController ()
@@ -23,9 +22,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    RunloopTest *rlop = [[RunloopTest alloc] init];
-    // 此处runloop的启动阻塞了主线程
-    [rlop usingRunloop];
+    ARCRetainCount *test = [[ARCRetainCount alloc] init];
+//    [test getRetainCountOfMutable];
+    [test getRetainCountOfImmutable];
 }
 
 /**
@@ -37,7 +36,7 @@
     _strongBtn.backgroundColor = [UIColor redColor];
     _strongBtn.tag = 100;
     [self.view addSubview:_strongBtn];
-
+    
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
     _weakBtn = button;
     _weakBtn.backgroundColor = [UIColor purpleColor];

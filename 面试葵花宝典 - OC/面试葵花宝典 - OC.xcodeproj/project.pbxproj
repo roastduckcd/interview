@@ -19,6 +19,7 @@
 		619E9C6A20C8DC3A00AC61EA /* _________OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 619E9C6920C8DC3A00AC61EA /* _________OCTests.m */; };
 		619E9C7520C8DC3A00AC61EA /* _________OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 619E9C7420C8DC3A00AC61EA /* _________OCUITests.m */; };
 		619E9C8520C8DD2000AC61EA /* Fanshejizhi.m in Sources */ = {isa = PBXBuildFile; fileRef = 619E9C8420C8DD2000AC61EA /* Fanshejizhi.m */; };
+		61ECECDC20D0BEB8008E9BFA /* ARCRetainCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 61ECECDB20D0BEB8008E9BFA /* ARCRetainCount.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		619E9C7620C8DC3A00AC61EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619E9C8320C8DD2000AC61EA /* Fanshejizhi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fanshejizhi.h; sourceTree = "<group>"; };
 		619E9C8420C8DD2000AC61EA /* Fanshejizhi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fanshejizhi.m; sourceTree = "<group>"; };
+		61ECECDA20D0BEB8008E9BFA /* ARCRetainCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCRetainCount.h; sourceTree = "<group>"; };
+		61ECECDB20D0BEB8008E9BFA /* ARCRetainCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCRetainCount.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,7 @@
 				6170E74020C9106B0078A329 /* DeleteFilesHierarchily.m */,
 				6148ABD220CF98FB00C98913 /* RunloopTest.h */,
 				6148ABD320CF98FB00C98913 /* RunloopTest.m */,
+				61ECECD920D0BE81008E9BFA /* 内存管理 */,
 				619E9C8220C8DCA500AC61EA /* sources */,
 			);
 			path = "面试葵花宝典 - OC";
@@ -158,6 +162,15 @@
 				619E9C5620C8DC3900AC61EA /* Main.storyboard */,
 			);
 			path = sources;
+			sourceTree = "<group>";
+		};
+		61ECECD920D0BE81008E9BFA /* 内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				61ECECDA20D0BEB8008E9BFA /* ARCRetainCount.h */,
+				61ECECDB20D0BEB8008E9BFA /* ARCRetainCount.m */,
+			);
+			path = "内存管理";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +308,7 @@
 				619E9C5220C8DC3900AC61EA /* AppDelegate.m in Sources */,
 				6148ABD420CF98FB00C98913 /* RunloopTest.m in Sources */,
 				619E9C8520C8DD2000AC61EA /* Fanshejizhi.m in Sources */,
+				61ECECDC20D0BEB8008E9BFA /* ARCRetainCount.m in Sources */,
 				6170E73D20C8FCCE0078A329 /* PassingStruct.m in Sources */,
 				6170E74120C9106B0078A329 /* DeleteFilesHierarchily.m in Sources */,
 			);
