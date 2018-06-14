@@ -19,6 +19,7 @@
 		619E9C6A20C8DC3A00AC61EA /* _________OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 619E9C6920C8DC3A00AC61EA /* _________OCTests.m */; };
 		619E9C7520C8DC3A00AC61EA /* _________OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 619E9C7420C8DC3A00AC61EA /* _________OCUITests.m */; };
 		619E9C8520C8DD2000AC61EA /* Fanshejizhi.m in Sources */ = {isa = PBXBuildFile; fileRef = 619E9C8420C8DD2000AC61EA /* Fanshejizhi.m */; };
+		61A82D3720D23BB8007BC938 /* RetainCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A82D3620D23BB8007BC938 /* RetainCycle.m */; };
 		61ECECE820D0D74C008E9BFA /* ARCRetainCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 61ECECE420D0D74C008E9BFA /* ARCRetainCount.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		619E9C7620C8DC3A00AC61EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619E9C8320C8DD2000AC61EA /* Fanshejizhi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fanshejizhi.h; sourceTree = "<group>"; };
 		619E9C8420C8DD2000AC61EA /* Fanshejizhi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fanshejizhi.m; sourceTree = "<group>"; };
+		61A82D3520D23BB8007BC938 /* RetainCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RetainCycle.h; sourceTree = "<group>"; };
+		61A82D3620D23BB8007BC938 /* RetainCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetainCycle.m; sourceTree = "<group>"; };
 		61ECECE420D0D74C008E9BFA /* ARCRetainCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCRetainCount.m; sourceTree = "<group>"; };
 		61ECECE720D0D74C008E9BFA /* ARCRetainCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCRetainCount.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +172,8 @@
 			children = (
 				61ECECE720D0D74C008E9BFA /* ARCRetainCount.h */,
 				61ECECE420D0D74C008E9BFA /* ARCRetainCount.m */,
+				61A82D3520D23BB8007BC938 /* RetainCycle.h */,
+				61A82D3620D23BB8007BC938 /* RetainCycle.m */,
 			);
 			path = MemoryManaging;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				619E9C5520C8DC3900AC61EA /* ViewController.m in Sources */,
+				61A82D3720D23BB8007BC938 /* RetainCycle.m in Sources */,
 				619E9C6020C8DC3A00AC61EA /* main.m in Sources */,
 				619E9C5220C8DC3900AC61EA /* AppDelegate.m in Sources */,
 				6148ABD420CF98FB00C98913 /* RunloopTest.m in Sources */,
