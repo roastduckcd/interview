@@ -40,6 +40,12 @@
     // 非数据类型对象可以看到正常的count
     UIView *view = [[UIView alloc] init];
     NSLog(@"**==**retain count = %lu", [view retainCount]);
+
+
+    [arr release];
+    [arr release];
+
+    [view release];
 }
 
 /**
@@ -50,5 +56,6 @@
 
     NSLog(@"**==**retain count = %lu", [mStr retainCount]);
 }
+
 
 @end
