@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6141F23620D258B100FB4EAB /* BlockIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 6141F23520D258B100FB4EAB /* BlockIMP.m */; };
+		6141F24020D278E500FB4EAB /* BlockIMP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6141F23F20D278E500FB4EAB /* BlockIMP.mm */; };
 		6148ABD420CF98FB00C98913 /* RunloopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148ABD320CF98FB00C98913 /* RunloopTest.m */; };
 		6170E73D20C8FCCE0078A329 /* PassingStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 6170E73C20C8FCCE0078A329 /* PassingStruct.m */; };
 		6170E74120C9106B0078A329 /* DeleteFilesHierarchily.m in Sources */ = {isa = PBXBuildFile; fileRef = 6170E74020C9106B0078A329 /* DeleteFilesHierarchily.m */; };
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6141F23420D258B100FB4EAB /* BlockIMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockIMP.h; sourceTree = "<group>"; };
+		6141F23520D258B100FB4EAB /* BlockIMP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockIMP.m; sourceTree = "<group>"; };
+		6141F23F20D278E500FB4EAB /* BlockIMP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BlockIMP.mm; sourceTree = "<group>"; };
 		6148ABD220CF98FB00C98913 /* RunloopTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopTest.h; sourceTree = "<group>"; };
 		6148ABD320CF98FB00C98913 /* RunloopTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopTest.m; sourceTree = "<group>"; };
 		6170E73B20C8FCCE0078A329 /* PassingStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassingStruct.h; sourceTree = "<group>"; };
@@ -96,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6141F23320D2587D00FB4EAB /* BlockImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				6141F23420D258B100FB4EAB /* BlockIMP.h */,
+				6141F23520D258B100FB4EAB /* BlockIMP.m */,
+				6141F23F20D278E500FB4EAB /* BlockIMP.mm */,
+			);
+			path = BlockImplementation;
+			sourceTree = "<group>";
+		};
 		619E9C4420C8DC3900AC61EA = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +144,7 @@
 				6170E74020C9106B0078A329 /* DeleteFilesHierarchily.m */,
 				6148ABD220CF98FB00C98913 /* RunloopTest.h */,
 				6148ABD320CF98FB00C98913 /* RunloopTest.m */,
+				6141F23320D2587D00FB4EAB /* BlockImplementation */,
 				61ECECE320D0D74C008E9BFA /* MemoryManaging */,
 				619E9C8220C8DCA500AC61EA /* sources */,
 			);
@@ -310,10 +326,12 @@
 			files = (
 				619E9C5520C8DC3900AC61EA /* ViewController.m in Sources */,
 				61A82D3720D23BB8007BC938 /* RetainCycle.m in Sources */,
+				6141F23620D258B100FB4EAB /* BlockIMP.m in Sources */,
 				619E9C6020C8DC3A00AC61EA /* main.m in Sources */,
 				619E9C5220C8DC3900AC61EA /* AppDelegate.m in Sources */,
 				6148ABD420CF98FB00C98913 /* RunloopTest.m in Sources */,
 				619E9C8520C8DD2000AC61EA /* Fanshejizhi.m in Sources */,
+				6141F24020D278E500FB4EAB /* BlockIMP.mm in Sources */,
 				61ECECE820D0D74C008E9BFA /* ARCRetainCount.m in Sources */,
 				6170E73D20C8FCCE0078A329 /* PassingStruct.m in Sources */,
 				6170E74120C9106B0078A329 /* DeleteFilesHierarchily.m in Sources */,
@@ -487,6 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBVYKESUN4;
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/面试葵花宝典 - OC/sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,6 +523,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBVYKESUN4;
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/面试葵花宝典 - OC/sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

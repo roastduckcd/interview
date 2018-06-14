@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "RetainCycle.h"
-#import "DeleteFilesHierarchily.h"
-#import "ARCRetainCount.h"
+#import "BlockImplementation/BlockIMP.h"
 
 __weak id ref = nil;
 @interface ViewController ()
@@ -17,7 +15,6 @@ __weak id ref = nil;
 @property (nonatomic, strong) UIButton *strongBtn;
 @property (nonatomic, weak) UIButton *weakBtn;
 @property (weak, nonatomic) IBOutlet UIButton *ibBtn;
-@property (nonatomic, strong) RetainCycle *cycle;
 
 @end
 
@@ -25,8 +22,12 @@ __weak id ref = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.cycle = [[RetainCycle alloc] init];
-    [self.cycle createTimer];
+    BlockIMP *bb = [[BlockIMP alloc] init];
+    [bb firstBlock];
+    [bb secondBlock];
+    [bb thirdBlock];
+    [bb fourthBlock];
+    [bb fifthBlcok];
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
