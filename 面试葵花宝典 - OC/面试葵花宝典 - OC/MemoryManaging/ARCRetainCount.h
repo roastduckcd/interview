@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ARCRetainCount : NSObject
 - (void)getRetainCountOfImmutable;
 - (void)getRetainCountOfMutable;
+- (void)convenienceInitRelease;
 @end
 
 NS_ASSUME_NONNULL_END

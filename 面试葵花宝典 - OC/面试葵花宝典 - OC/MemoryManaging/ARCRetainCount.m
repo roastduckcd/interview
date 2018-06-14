@@ -57,5 +57,14 @@
     NSLog(@"**==**retain count = %lu", [mStr retainCount]);
 }
 
+/**
+ 遍历构造器产生的对象使用release会造成过度释放。
+ 原因：遍历构造器初始化对象后会自动进行autorelease。
+ */
+- (void)convenienceInitRelease {
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:@"value" forKey:@"key"];
+    NSLog(@"%@", dic[@"key"]);
+    [dic release];
+}
 
 @end
