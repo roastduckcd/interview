@@ -17,18 +17,25 @@
     ///
     NSError *err = nil;
     NSString *temp = paths.firstObject;
-    path = [temp substringToIndex:temp.length - 10];
 
     NSArray *files = [manager contentsOfDirectoryAtPath:temp error:&err];
 
 
     BOOL isDir;
-    for (NSString *path in files) {
-
-        BOOL isExist = [manager fileExistsAtPath:path isDirectory:&isDir];
+    for (NSString *filename in files) {
+        NSString *filepath = [temp stringByAppendingPathComponent:filename];
+        BOOL isExist = [manager fileExistsAtPath:filepath isDirectory:&isDir];
         // 需要是绝对路径
-        BOOL isSus = [manager removeItemAtPath:path error:&err];
-        NSLog(@"++==++%@", err.userInfo);
+        if (isExist) {
+            BOOL isSus = [manager removeItemAtPath:filepath error:&err];
+            if (isSus) {
+                NSLog(@"++==++remove successfully");
+            }else {
+                NSLog(@"++==++%@", err.userInfo);
+            }
+        }else {
+            NSLog(@"no such file");
+        }
     }
 }
 
