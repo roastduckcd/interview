@@ -22,6 +22,7 @@
 		619E9C8520C8DD2000AC61EA /* Fanshejizhi.m in Sources */ = {isa = PBXBuildFile; fileRef = 619E9C8420C8DD2000AC61EA /* Fanshejizhi.m */; };
 		61A82D3720D23BB8007BC938 /* RetainCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A82D3620D23BB8007BC938 /* RetainCycle.m */; };
 		61AC81C320E3697300ED73EE /* BlockRetainCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AC81C220E3697300ED73EE /* BlockRetainCycle.m */; };
+		61D8448520E3723E0074763E /* BlockValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8448420E3723E0074763E /* BlockValueViewController.m */; };
 		61ECECE820D0D74C008E9BFA /* ARCRetainCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 61ECECE420D0D74C008E9BFA /* ARCRetainCount.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		61A82D3620D23BB8007BC938 /* RetainCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetainCycle.m; sourceTree = "<group>"; };
 		61AC81C120E3697300ED73EE /* BlockRetainCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockRetainCycle.h; sourceTree = "<group>"; };
 		61AC81C220E3697300ED73EE /* BlockRetainCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockRetainCycle.m; sourceTree = "<group>"; };
+		61D8448320E3723E0074763E /* BlockValueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockValueViewController.h; sourceTree = "<group>"; };
+		61D8448420E3723E0074763E /* BlockValueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockValueViewController.m; sourceTree = "<group>"; };
 		61ECECE420D0D74C008E9BFA /* ARCRetainCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCRetainCount.m; sourceTree = "<group>"; };
 		61ECECE720D0D74C008E9BFA /* ARCRetainCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCRetainCount.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +112,8 @@
 				6141F23520D258B100FB4EAB /* BlockIMP.m */,
 				61AC81C120E3697300ED73EE /* BlockRetainCycle.h */,
 				61AC81C220E3697300ED73EE /* BlockRetainCycle.m */,
+				61D8448320E3723E0074763E /* BlockValueViewController.h */,
+				61D8448420E3723E0074763E /* BlockValueViewController.m */,
 			);
 			path = BlockImplementation;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				61A82D3720D23BB8007BC938 /* RetainCycle.m in Sources */,
 				61AC81C320E3697300ED73EE /* BlockRetainCycle.m in Sources */,
 				6141F23620D258B100FB4EAB /* BlockIMP.m in Sources */,
+				61D8448520E3723E0074763E /* BlockValueViewController.m in Sources */,
 				619E9C6020C8DC3A00AC61EA /* main.m in Sources */,
 				619E9C5220C8DC3900AC61EA /* AppDelegate.m in Sources */,
 				6148ABD420CF98FB00C98913 /* RunloopTest.m in Sources */,
@@ -442,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -494,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

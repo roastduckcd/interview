@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "BlockImplementation/BlockRetainCycle.h"
+#import "BlockImplementation/BlockValueViewController.h"
 
 __weak id ref = nil;
 @interface ViewController ()
@@ -22,19 +22,18 @@ __weak id ref = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    BlockRetainCycle *cycle = [[BlockRetainCycle alloc] init];
-    [cycle blockCycle];
+    
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     // weak 引用的局部变量在此处仍指向对象
     // 按理 应该在 viewDidLoad 函数结束就被释放。
     // 可以证明非显式autorelease对象是会延迟释放，一般来说是在当前runloop的迭代结束时。
-    NSLog(@"%@", ref);
+//    NSLog(@"%@", ref);
 }
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    NSLog(@"%@", ref);
+//    NSLog(@"%@", ref);
 }
 
 /**
@@ -72,6 +71,23 @@ __weak id ref = nil;
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"touches begin");
+}
+// story board 那就该使用segue跳转.
+// xib 用 present dismiss
+- (IBAction)present:(UIButton *)sender {
+//    BlockValueViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"BlockValueViewController"];
+//
+//    // block赋值之前，controllery已经加载好, viewDidLoad 已经执行。
+//    vc.reverseValueBlock = ^(NSString *name) {
+//        NSLog(@"my name is : %@", name);
+//    };
+//    [self presentViewController:vc animated:YES completion:nil];
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    BlockValueViewController *vc = (BlockValueViewController *)segue.destinationViewController;
+    vc.reverseValueBlock = ^(NSString *name) {
+        NSLog(@"my name is : %@", name);
+    };
 }
 
 @end
