@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "BlockImplementation/BlockIMP.h"
+#import "BlockImplementation/BlockRetainCycle.h"
 
 __weak id ref = nil;
 @interface ViewController ()
@@ -22,12 +22,8 @@ __weak id ref = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    BlockIMP *bb = [[BlockIMP alloc] init];
-    [bb firstBlock];
-    [bb secondBlock];
-    [bb thirdBlock];
-    [bb fourthBlock];
-    [bb fifthBlcok];
+    BlockRetainCycle *cycle = [[BlockRetainCycle alloc] init];
+    [cycle blockCycle];
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
