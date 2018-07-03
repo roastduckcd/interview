@@ -24,8 +24,7 @@
                                 <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="present:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tsp-at-rFf"/>
-                                    <segue destination="5GN-Uc-aSY" kind="show" identifier="toBlockValue" id="yl3-ac-MLl"/>
+                                    <action selector="present:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t7A-cb-4pY"/>
                                 </connections>
                             </button>
                         </subviews>

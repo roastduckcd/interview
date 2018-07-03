@@ -7,12 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "HowToUseBlock.h"
+#import "TableViewController.h"
 
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *ibBtn;
+@property (nonatomic, assign) NSInteger sec;
 
 @end
 
@@ -21,23 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    HowToUseBlock *how = [[HowToUseBlock alloc] init];
-    how.propertyBlock = ^(NSString *name) {
-        NSLog(@"属性block:%@", name);
-    };
-    how.propertyBlock(@"blady");
 
-    [how argumentBlock:^(NSString *name) {
-        NSLog(@"参数block:%@", name);
-    }];
-
-    HowToUseBlock * (^myBlock)(NSString *name) = [how appendName];
-    myBlock(@"尘外孤标意琦行");
-
-    how.appendName(@"流苏晚晴").appendName(@"剑非道");
-
-    
 }
+- (IBAction)present:(UIButton *)sender {
+    TableViewController *tableVC = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:[NSBundle mainBundle]];
+    [self presentViewController:tableVC animated:YES completion:nil];
+}
+
 
 
 @end
