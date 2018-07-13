@@ -25,7 +25,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = @"got it";
+    cell.textLabel.text = self.dataArr[indexPath.row];
     return cell;
 }
 

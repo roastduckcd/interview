@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+
+target 'AppFunction' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+
+    pod 'AFNetworking'
+
+  target 'AppFunctionTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AppFunctionUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -10,7 +10,14 @@
 #import <UIKit/UIKit.h>
 
 @interface RDTableViewDelegate : NSObject < UITableViewDelegate >
-
+/** 接收数据 */
 @property (nonatomic, strong) NSArray *dataArr;
 
+
+/**
+ 选中单元格后触发的事件
+
+ @param actionBlock 利用block传递事件
+ */
+- (void)addActionWhenSelected:(void (^)(NSIndexPath *indexPath))actionBlock;
 @end

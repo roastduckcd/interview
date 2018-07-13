@@ -7,9 +7,15 @@
 //
 
 #import "FlowViewController.h"
+#import "UIImage+RDThumbnail.h"
 
 @interface FlowViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *oldImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *scaledImageView;
+
+@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, assign) BOOL isClicked;
 
 @end
 
@@ -17,22 +23,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    self.isClicked = NO;
+
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"jpg"];
+    self.image  = [UIImage imageWithContentsOfFile:imagePath];
+
+    self.oldImageView.image = self.image;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    CGSize size = self.oldImageView.bounds.size;
+    if (_isClicked) {
+        NSLog(@"new");
+//        self.oldImageView.image = [self.image scaleImageToSizeByUIkit:size scale:0.0];// 感觉没啥区别
+//        self.oldImageView.image = [self.image scaleImageToSizeByCGGraphiscs:size];//感觉有些许上下拉伸，模糊
+//        self.oldImageView.image = [self.image scaleImageToSizeByImageIO:size];// 感觉没啥区别
+//        self.oldImageView.image = [self.image scaleImageToSizeByCoreImage:size];// 貌似相当消耗性能
+        self.oldImageView.image = [self.image scaleImageToSizeByVImage:size];
+    } else {
+        NSLog(@"old");
+        self.oldImageView.image = self.image;
+    }
+    _isClicked = !_isClicked;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

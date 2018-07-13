@@ -10,7 +10,8 @@
 #import <UIKit/UIKit.h>
 
 @interface RDTableViewDatasource : NSObject < UITableViewDataSource >
-
+/** 数据源 */
+//TODO: 可能是字典或其他对象
 @property (nonatomic, strong) NSArray *dataArr;
 
 

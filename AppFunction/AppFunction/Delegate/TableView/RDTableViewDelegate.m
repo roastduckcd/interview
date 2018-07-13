@@ -7,16 +7,25 @@
 //
 
 #import "RDTableViewDelegate.h"
-#import "FlowViewController.h"
-#import "IBManager.h"
-#import "NSObject+GeneralConroller.h"
+
+typedef void(^ActionBlock)(NSIndexPath *indexPath);
+
+@interface RDTableViewDelegate ()
+
+@property (nonatomic, copy) ActionBlock selectedBlock;
+
+@end
 
 @implementation RDTableViewDelegate
 
+- (void)addActionWhenSelected:(void (^)(NSIndexPath *indexPath))actionBlock {
+    self.selectedBlock = actionBlock;
+}
+
+#pragma mark - table delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    FlowViewController *flowVC = [IBManager instanceViewControllerWithNibName:@"FlowViewController"];
-    [self.thisController.navigationController pushViewController:flowVC animated:YES];
+    self.selectedBlock(indexPath);
 }
 
 @end
