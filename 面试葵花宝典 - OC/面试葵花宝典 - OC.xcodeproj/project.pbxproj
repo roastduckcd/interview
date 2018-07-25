@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6109F11421082EAA00BEA4B6 /* LoadForEachClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6109F11321082EAA00BEA4B6 /* LoadForEachClass.m */; };
+		6109F11A21082F6D00BEA4B6 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 6109F11921082F6D00BEA4B6 /* Son.m */; };
+		6109F11F210830EC00BEA4B6 /* LoadForEachClass+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6109F11E210830EC00BEA4B6 /* LoadForEachClass+Test.m */; };
+		6109F122210830FD00BEA4B6 /* Son+Exam.m in Sources */ = {isa = PBXBuildFile; fileRef = 6109F121210830FD00BEA4B6 /* Son+Exam.m */; };
 		6141F23620D258B100FB4EAB /* BlockIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 6141F23520D258B100FB4EAB /* BlockIMP.m */; };
 		6148ABD420CF98FB00C98913 /* RunloopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148ABD320CF98FB00C98913 /* RunloopTest.m */; };
 		6170E73D20C8FCCE0078A329 /* PassingStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 6170E73C20C8FCCE0078A329 /* PassingStruct.m */; };
@@ -48,6 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6109F11221082EAA00BEA4B6 /* LoadForEachClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadForEachClass.h; sourceTree = "<group>"; };
+		6109F11321082EAA00BEA4B6 /* LoadForEachClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadForEachClass.m; sourceTree = "<group>"; };
+		6109F11821082F6D00BEA4B6 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		6109F11921082F6D00BEA4B6 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		6109F11D210830EC00BEA4B6 /* LoadForEachClass+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoadForEachClass+Test.h"; sourceTree = "<group>"; };
+		6109F11E210830EC00BEA4B6 /* LoadForEachClass+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoadForEachClass+Test.m"; sourceTree = "<group>"; };
+		6109F120210830FD00BEA4B6 /* Son+Exam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Son+Exam.h"; sourceTree = "<group>"; };
+		6109F121210830FD00BEA4B6 /* Son+Exam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Son+Exam.m"; sourceTree = "<group>"; };
 		6141F23420D258B100FB4EAB /* BlockIMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockIMP.h; sourceTree = "<group>"; };
 		6141F23520D258B100FB4EAB /* BlockIMP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockIMP.m; sourceTree = "<group>"; };
 		6148ABD220CF98FB00C98913 /* RunloopTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopTest.h; sourceTree = "<group>"; };
@@ -116,6 +128,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6109F11B21082FDD00BEA4B6 /* LoadAndInitialize */ = {
+			isa = PBXGroup;
+			children = (
+				6109F11221082EAA00BEA4B6 /* LoadForEachClass.h */,
+				6109F11321082EAA00BEA4B6 /* LoadForEachClass.m */,
+				6109F11821082F6D00BEA4B6 /* Son.h */,
+				6109F11921082F6D00BEA4B6 /* Son.m */,
+				6109F120210830FD00BEA4B6 /* Son+Exam.h */,
+				6109F121210830FD00BEA4B6 /* Son+Exam.m */,
+				6109F11D210830EC00BEA4B6 /* LoadForEachClass+Test.h */,
+				6109F11E210830EC00BEA4B6 /* LoadForEachClass+Test.m */,
+			);
+			path = LoadAndInitialize;
+			sourceTree = "<group>";
+		};
 		6141F23320D2587D00FB4EAB /* BlockImplementation */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +193,7 @@
 				6170E74020C9106B0078A329 /* DeleteFilesHierarchily.m */,
 				6148ABD220CF98FB00C98913 /* RunloopTest.h */,
 				6148ABD320CF98FB00C98913 /* RunloopTest.m */,
+				6109F11B21082FDD00BEA4B6 /* LoadAndInitialize */,
 				61B2974120E4E1FE00D35AF6 /* UI */,
 				6141F23320D2587D00FB4EAB /* BlockImplementation */,
 				61ECECE320D0D74C008E9BFA /* MemoryManaging */,
@@ -361,14 +389,18 @@
 				619E9C5520C8DC3900AC61EA /* ViewController.m in Sources */,
 				61A82D3720D23BB8007BC938 /* RetainCycle.m in Sources */,
 				61B2974020E4BF0000D35AF6 /* NSTimer+Block.m in Sources */,
+				6109F11F210830EC00BEA4B6 /* LoadForEachClass+Test.m in Sources */,
+				6109F122210830FD00BEA4B6 /* Son+Exam.m in Sources */,
 				61B2973A20E4B01A00D35AF6 /* HowToUseBlock.m in Sources */,
 				61AC81C320E3697300ED73EE /* BlockRetainCycle.m in Sources */,
+				6109F11A21082F6D00BEA4B6 /* Son.m in Sources */,
 				6141F23620D258B100FB4EAB /* BlockIMP.m in Sources */,
 				61D8448520E3723E0074763E /* BlockValueViewController.m in Sources */,
 				619E9C6020C8DC3A00AC61EA /* main.m in Sources */,
 				619E9C5220C8DC3900AC61EA /* AppDelegate.m in Sources */,
 				6148ABD420CF98FB00C98913 /* RunloopTest.m in Sources */,
 				619E9C8520C8DD2000AC61EA /* Fanshejizhi.m in Sources */,
+				6109F11421082EAA00BEA4B6 /* LoadForEachClass.m in Sources */,
 				61ECECE820D0D74C008E9BFA /* ARCRetainCount.m in Sources */,
 				6170E73D20C8FCCE0078A329 /* PassingStruct.m in Sources */,
 				61B2974520E4E26400D35AF6 /* TableViewController.m in Sources */,

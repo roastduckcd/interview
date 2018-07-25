@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TableViewController.h"
+#import "Son.h"
 
 
 @interface ViewController ()
@@ -22,7 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
+//    LoadForEachClass *aa = [[LoadForEachClass alloc] init];
+    Class aa = [LoadForEachClass class];
+    Son *so = [[Son alloc] init];
 }
 - (IBAction)present:(UIButton *)sender {
     TableViewController *tableVC = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:[NSBundle mainBundle]];
