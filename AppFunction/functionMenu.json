@@ -1,7 +1,13 @@
 {
     "menu":[
         "瀑布流",
-        "待准备",
+        "轮播图",
         "待处理"
+    ],
+    "image":[
+        "http://pic37.nipic.com/20140106/7487939_080634706000_2.jpg",
+        "http://pic5.photophoto.cn/20071228/0034034901778224_b.jpg",
+        "http://pic1.16pic.com/00/07/66/16pic_766152_b.jpg",
+        "http://pic9.photophoto.cn/20081229/0034034829945374_b.jpg"
     ]
 }

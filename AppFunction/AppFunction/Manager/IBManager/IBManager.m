@@ -19,9 +19,14 @@
     return [UIStoryboard storyboardWithName:name bundle:[NSBundle mainBundle]];
 }
 
-#pragma mark - 从 xib
+#pragma mark - 从 xib ：xib 和 自定义类 名字必须相同
 + (nonnull __kindof UIViewController *)instanceViewControllerWithNibName:(nonnull NSString *)name {
-    return [[UIViewController alloc] initWithNibName:name bundle:[NSBundle mainBundle]];
+
+    if ([name hasSuffix:@".xib"]) {
+        name = [name stringByDeletingPathExtension];
+    }
+
+    return [[NSClassFromString(name) alloc] initWithNibName:name bundle:[NSBundle mainBundle]];
 }
 
 @end

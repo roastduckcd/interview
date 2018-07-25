@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		11097A3BF2C8F495E51F034F /* libPods-AppFunctionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF59090AB2FC46D550F35665 /* libPods-AppFunctionTests.a */; };
 		2E86BE8F01A782A129C6CBF7 /* libPods-AppFunctionUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E13EDB69EFE4F0C6A6BF045 /* libPods-AppFunctionUITests.a */; };
+		614F7D5520FDED0300E48FE7 /* RDImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 614F7D5420FDED0300E48FE7 /* RDImageScrollView.m */; };
+		614F7D5820FDF19800E48FE7 /* RDPageControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 614F7D5720FDF19800E48FE7 /* RDPageControlView.m */; };
 		618C373B20F5EEA300FBA2D8 /* FunctionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 618C373A20F5EEA300FBA2D8 /* FunctionMenu.m */; };
 		618CA90420F7B66200C58007 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 618CA90320F7B66200C58007 /* test.jpg */; };
 		61AE28B520EB287F006B8551 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AE28B420EB287F006B8551 /* AppDelegate.m */; };
@@ -30,6 +32,9 @@
 		61AE291520EB4B87006B8551 /* NSObject+GeneralConroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AE291420EB4B87006B8551 /* NSObject+GeneralConroller.m */; };
 		61AE291720EB587E006B8551 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 61AE291620EB587E006B8551 /* Podfile */; };
 		61AE291B20EB5A13006B8551 /* RDNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AE291A20EB5A13006B8551 /* RDNetworkManager.m */; };
+		61DC9C6420F8801400CF8FBD /* RDImageScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DC9C6220F8801400CF8FBD /* RDImageScrollViewController.m */; };
+		61DC9C6520F8801400CF8FBD /* RDImageScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61DC9C6320F8801400CF8FBD /* RDImageScrollViewController.xib */; };
+		61DC9C6720F8963100CF8FBD /* functionMenu.json in Resources */ = {isa = PBXBuildFile; fileRef = 61DC9C6620F8963100CF8FBD /* functionMenu.json */; };
 		61FA01A520EDD38D009FA0A2 /* UIImage+RDThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FA01A420EDD38D009FA0A2 /* UIImage+RDThumbnail.m */; };
 		61FA01A720EDD3CA009FA0A2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 61FA01A620EDD3CA009FA0A2 /* README.md */; };
 		832E520A57BD577A0618DF74 /* libPods-AppFunction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 366065643141F719D2BE8554 /* libPods-AppFunction.a */; };
@@ -58,6 +63,10 @@
 		3AE03056AFBBD919B1B3A287 /* Pods-AppFunction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFunction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppFunction/Pods-AppFunction.debug.xcconfig"; sourceTree = "<group>"; };
 		4262FA86DC16FD05FE60CB41 /* Pods-AppFunction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFunction.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppFunction/Pods-AppFunction.release.xcconfig"; sourceTree = "<group>"; };
 		4B1A762524374918EBC20921 /* Pods-AppFunctionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFunctionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppFunctionTests/Pods-AppFunctionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		614F7D5320FDED0300E48FE7 /* RDImageScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDImageScrollView.h; sourceTree = "<group>"; };
+		614F7D5420FDED0300E48FE7 /* RDImageScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDImageScrollView.m; sourceTree = "<group>"; };
+		614F7D5620FDF19800E48FE7 /* RDPageControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDPageControlView.h; sourceTree = "<group>"; };
+		614F7D5720FDF19800E48FE7 /* RDPageControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDPageControlView.m; sourceTree = "<group>"; };
 		618C373920F5EEA300FBA2D8 /* FunctionMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionMenu.h; sourceTree = "<group>"; };
 		618C373A20F5EEA300FBA2D8 /* FunctionMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionMenu.m; sourceTree = "<group>"; };
 		618CA90320F7B66200C58007 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
@@ -97,6 +106,11 @@
 		61AE291620EB587E006B8551 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		61AE291920EB5A13006B8551 /* RDNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDNetworkManager.h; sourceTree = "<group>"; };
 		61AE291A20EB5A13006B8551 /* RDNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDNetworkManager.m; sourceTree = "<group>"; };
+		61DC9C6120F8801400CF8FBD /* RDImageScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDImageScrollViewController.h; sourceTree = "<group>"; };
+		61DC9C6220F8801400CF8FBD /* RDImageScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDImageScrollViewController.m; sourceTree = "<group>"; };
+		61DC9C6320F8801400CF8FBD /* RDImageScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RDImageScrollViewController.xib; sourceTree = "<group>"; };
+		61DC9C6620F8963100CF8FBD /* functionMenu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = functionMenu.json; sourceTree = SOURCE_ROOT; };
+		61E3A31920FF019800A64F6B /* AppFunction-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppFunction-Bridging-Header.h"; sourceTree = "<group>"; };
 		61FA01A320EDD38D009FA0A2 /* UIImage+RDThumbnail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RDThumbnail.h"; sourceTree = "<group>"; };
 		61FA01A420EDD38D009FA0A2 /* UIImage+RDThumbnail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RDThumbnail.m"; sourceTree = "<group>"; };
 		61FA01A620EDD3CA009FA0A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -182,6 +196,7 @@
 				61AE291220EB4AF7006B8551 /* extension */,
 				61AE28F120EB2D7E006B8551 /* Delegate */,
 				61AE28E620EB28EB006B8551 /* 瀑布流 */,
+				61DC9C6020F87FD800CF8FBD /* 轮播图 */,
 				61AE28E520EB289E006B8551 /* sources */,
 			);
 			path = AppFunction;
@@ -208,7 +223,9 @@
 		61AE28E520EB289E006B8551 /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				61E3A31920FF019800A64F6B /* AppFunction-Bridging-Header.h */,
 				618CA90320F7B66200C58007 /* test.jpg */,
+				61DC9C6620F8963100CF8FBD /* functionMenu.json */,
 				61AE291620EB587E006B8551 /* Podfile */,
 				61AE28BC20EB2881006B8551 /* Assets.xcassets */,
 				61AE28BE20EB2881006B8551 /* LaunchScreen.storyboard */,
@@ -323,6 +340,20 @@
 			path = NetworkManager;
 			sourceTree = "<group>";
 		};
+		61DC9C6020F87FD800CF8FBD /* 轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				61DC9C6120F8801400CF8FBD /* RDImageScrollViewController.h */,
+				61DC9C6220F8801400CF8FBD /* RDImageScrollViewController.m */,
+				61DC9C6320F8801400CF8FBD /* RDImageScrollViewController.xib */,
+				614F7D5320FDED0300E48FE7 /* RDImageScrollView.h */,
+				614F7D5420FDED0300E48FE7 /* RDImageScrollView.m */,
+				614F7D5620FDF19800E48FE7 /* RDPageControlView.h */,
+				614F7D5720FDF19800E48FE7 /* RDPageControlView.m */,
+			);
+			path = "轮播图";
+			sourceTree = "<group>";
+		};
 		61FA01A220EDD2E3009FA0A2 /* UIImage+Thumbnail */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,6 +451,7 @@
 				TargetAttributes = {
 					61AE28AF20EB287F006B8551 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					61AE28C720EB2881006B8551 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -463,6 +495,8 @@
 				61AE28BD20EB2881006B8551 /* Assets.xcassets in Resources */,
 				61AE28EB20EB2924006B8551 /* FlowViewController.xib in Resources */,
 				61AE28BB20EB287F006B8551 /* Main.storyboard in Resources */,
+				61DC9C6720F8963100CF8FBD /* functionMenu.json in Resources */,
+				61DC9C6520F8801400CF8FBD /* RDImageScrollViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,14 +669,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				61AE28B820EB287F006B8551 /* ViewController.m in Sources */,
+				614F7D5520FDED0300E48FE7 /* RDImageScrollView.m in Sources */,
 				61AE290B20EB2E23006B8551 /* RDCollectionViewDatasource.m in Sources */,
 				61AE291520EB4B87006B8551 /* NSObject+GeneralConroller.m in Sources */,
 				61AE28C320EB2881006B8551 /* main.m in Sources */,
+				61DC9C6420F8801400CF8FBD /* RDImageScrollViewController.m in Sources */,
 				61AE290820EB2E23006B8551 /* RDTableViewDatasource.m in Sources */,
 				61AE28F020EB2C95006B8551 /* IBManager.m in Sources */,
 				61AE290920EB2E23006B8551 /* RDTableViewDelegate.m in Sources */,
 				61AE290A20EB2E23006B8551 /* RDCollectionViewDelegate.m in Sources */,
 				61AE291B20EB5A13006B8551 /* RDNetworkManager.m in Sources */,
+				614F7D5820FDF19800E48FE7 /* RDPageControlView.m in Sources */,
 				61AE28EA20EB2924006B8551 /* FlowViewController.m in Sources */,
 				618C373B20F5EEA300FBA2D8 /* FunctionMenu.m in Sources */,
 				61AE291120EB4AE5006B8551 /* NSObject+AlertController.m in Sources */,
@@ -817,6 +854,7 @@
 			baseConfigurationReference = 3AE03056AFBBD919B1B3A287 /* Pods-AppFunction.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBVYKESUN4;
 				INFOPLIST_FILE = "$(SRCROOT)/AppFunction/sources/Info.plist";
@@ -826,6 +864,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangsong.AppFunction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppFunction/轮播图/AppFunction-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -835,6 +876,7 @@
 			baseConfigurationReference = 4262FA86DC16FD05FE60CB41 /* Pods-AppFunction.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBVYKESUN4;
 				INFOPLIST_FILE = "$(SRCROOT)/AppFunction/sources/Info.plist";
@@ -844,6 +886,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangsong.AppFunction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppFunction/轮播图/AppFunction-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

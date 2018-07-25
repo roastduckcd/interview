@@ -14,6 +14,12 @@
 /**
  使用UIKit中的函数进行图片大小处理
  用于图像大小调整的最高级API
+ UIKit处理大分辨率图片时，往往容易出现OOM，
+ 原因是-[UIImage drawInRect:]在绘制时，先解码图片，再生成原始分辨率大小的bitmap，这是很耗内存的。
+ 解决方法是使用更低层的ImageIO接口，避免中间bitmap产生。
+
+ 推荐使用Core Graphics或Image I / O功能预先裁剪或缩小图像。
+
  @param size 缩略后的图片大小
  @param scale 图片的缩放因子，默认0.0，使用主屏幕分辨率变化
  @return 缩放后的图片
