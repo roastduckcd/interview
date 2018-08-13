@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "TableViewController.h"
-#import "Son.h"
+#import "RDMsgForwarding.h"
 
 
 @interface ViewController ()
@@ -23,9 +23,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    LoadForEachClass *aa = [[LoadForEachClass alloc] init];
-    Class aa = [LoadForEachClass class];
-    Son *so = [[Son alloc] init];
+    RDMsgForwarding *test = [[RDMsgForwarding alloc] init];
+//    [test callSomething:@"dog"];
+//    [test performSelector:@selector(eat)];
+    [test eat];
+//    [RDMsgForwarding performSelector:@selector(eat)];
 }
 - (IBAction)present:(UIButton *)sender {
     TableViewController *tableVC = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:[NSBundle mainBundle]];

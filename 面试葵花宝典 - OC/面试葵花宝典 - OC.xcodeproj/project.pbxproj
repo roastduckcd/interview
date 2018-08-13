@@ -13,6 +13,9 @@
 		6109F122210830FD00BEA4B6 /* Son+Exam.m in Sources */ = {isa = PBXBuildFile; fileRef = 6109F121210830FD00BEA4B6 /* Son+Exam.m */; };
 		6141F23620D258B100FB4EAB /* BlockIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 6141F23520D258B100FB4EAB /* BlockIMP.m */; };
 		6148ABD420CF98FB00C98913 /* RunloopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148ABD320CF98FB00C98913 /* RunloopTest.m */; };
+		615242B821214BF9007BA4C9 /* RDMsgForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 615242B721214BF9007BA4C9 /* RDMsgForwarding.m */; };
+		615242BB21215881007BA4C9 /* RDMsgOther.m in Sources */ = {isa = PBXBuildFile; fileRef = 615242BA21215881007BA4C9 /* RDMsgOther.m */; };
+		615242BE212173AE007BA4C9 /* RDMsgCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 615242BD212173AE007BA4C9 /* RDMsgCommon.m */; };
 		6170E73D20C8FCCE0078A329 /* PassingStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 6170E73C20C8FCCE0078A329 /* PassingStruct.m */; };
 		6170E74120C9106B0078A329 /* DeleteFilesHierarchily.m in Sources */ = {isa = PBXBuildFile; fileRef = 6170E74020C9106B0078A329 /* DeleteFilesHierarchily.m */; };
 		619E9C5220C8DC3900AC61EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 619E9C5120C8DC3900AC61EA /* AppDelegate.m */; };
@@ -64,6 +67,12 @@
 		6141F23520D258B100FB4EAB /* BlockIMP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockIMP.m; sourceTree = "<group>"; };
 		6148ABD220CF98FB00C98913 /* RunloopTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopTest.h; sourceTree = "<group>"; };
 		6148ABD320CF98FB00C98913 /* RunloopTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopTest.m; sourceTree = "<group>"; };
+		615242B621214BF9007BA4C9 /* RDMsgForwarding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDMsgForwarding.h; sourceTree = "<group>"; };
+		615242B721214BF9007BA4C9 /* RDMsgForwarding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDMsgForwarding.m; sourceTree = "<group>"; };
+		615242B921215881007BA4C9 /* RDMsgOther.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDMsgOther.h; sourceTree = "<group>"; };
+		615242BA21215881007BA4C9 /* RDMsgOther.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDMsgOther.m; sourceTree = "<group>"; };
+		615242BC212173AE007BA4C9 /* RDMsgCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDMsgCommon.h; sourceTree = "<group>"; };
+		615242BD212173AE007BA4C9 /* RDMsgCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDMsgCommon.m; sourceTree = "<group>"; };
 		6170E73B20C8FCCE0078A329 /* PassingStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassingStruct.h; sourceTree = "<group>"; };
 		6170E73C20C8FCCE0078A329 /* PassingStruct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassingStruct.m; sourceTree = "<group>"; };
 		6170E73F20C9106B0078A329 /* DeleteFilesHierarchily.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteFilesHierarchily.h; sourceTree = "<group>"; };
@@ -160,6 +169,19 @@
 			path = BlockImplementation;
 			sourceTree = "<group>";
 		};
+		615242B521214BD0007BA4C9 /* MsgForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				615242B621214BF9007BA4C9 /* RDMsgForwarding.h */,
+				615242B721214BF9007BA4C9 /* RDMsgForwarding.m */,
+				615242B921215881007BA4C9 /* RDMsgOther.h */,
+				615242BA21215881007BA4C9 /* RDMsgOther.m */,
+				615242BC212173AE007BA4C9 /* RDMsgCommon.h */,
+				615242BD212173AE007BA4C9 /* RDMsgCommon.m */,
+			);
+			path = MsgForwarding;
+			sourceTree = "<group>";
+		};
 		619E9C4420C8DC3900AC61EA = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +215,7 @@
 				6170E74020C9106B0078A329 /* DeleteFilesHierarchily.m */,
 				6148ABD220CF98FB00C98913 /* RunloopTest.h */,
 				6148ABD320CF98FB00C98913 /* RunloopTest.m */,
+				615242B521214BD0007BA4C9 /* MsgForwarding */,
 				6109F11B21082FDD00BEA4B6 /* LoadAndInitialize */,
 				61B2974120E4E1FE00D35AF6 /* UI */,
 				6141F23320D2587D00FB4EAB /* BlockImplementation */,
@@ -395,6 +418,7 @@
 				61AC81C320E3697300ED73EE /* BlockRetainCycle.m in Sources */,
 				6109F11A21082F6D00BEA4B6 /* Son.m in Sources */,
 				6141F23620D258B100FB4EAB /* BlockIMP.m in Sources */,
+				615242BB21215881007BA4C9 /* RDMsgOther.m in Sources */,
 				61D8448520E3723E0074763E /* BlockValueViewController.m in Sources */,
 				619E9C6020C8DC3A00AC61EA /* main.m in Sources */,
 				619E9C5220C8DC3900AC61EA /* AppDelegate.m in Sources */,
@@ -402,8 +426,10 @@
 				619E9C8520C8DD2000AC61EA /* Fanshejizhi.m in Sources */,
 				6109F11421082EAA00BEA4B6 /* LoadForEachClass.m in Sources */,
 				61ECECE820D0D74C008E9BFA /* ARCRetainCount.m in Sources */,
+				615242B821214BF9007BA4C9 /* RDMsgForwarding.m in Sources */,
 				6170E73D20C8FCCE0078A329 /* PassingStruct.m in Sources */,
 				61B2974520E4E26400D35AF6 /* TableViewController.m in Sources */,
+				615242BE212173AE007BA4C9 /* RDMsgCommon.m in Sources */,
 				6170E74120C9106B0078A329 /* DeleteFilesHierarchily.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
