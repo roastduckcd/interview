@@ -12,6 +12,9 @@
 #include "ArrayAndPointer.h"
 #include "PointerCalculating.h"
 #include "PointerPlusPlus.h"
+#include "exercise.h"
+#include "Sort.h"
+#include "BinarySearch.h"
 
 // 最好将参数和整个宏都括起来
 // 不要使用分号
@@ -23,7 +26,9 @@ void sizeOfPoint(void);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    pointerPlusPlus();
+//    sort();
+    int a[] = {0,1,2,3,4,5,6,7,8,9};
+    binarySearch(a, sizeof(a) / sizeof(int),10);
     return 0;
 }
 
