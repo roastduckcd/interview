@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "TableViewController.h"
-#import "RDMsgForwarding.h"
+#import "NSObject+Properties.h"
 
 
 @interface ViewController ()
@@ -23,11 +23,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    RDMsgForwarding *test = [[RDMsgForwarding alloc] init];
-//    [test callSomething:@"dog"];
-//    [test performSelector:@selector(eat)];
-    [test eat];
-//    [RDMsgForwarding performSelector:@selector(eat)];
+    // 分类添加的属性
+    self.name = @"yangsong";
+    self.age = 30;
+
+    NSLog(@"name: %@, age: %ld", self.name, self.age);
 }
 - (IBAction)present:(UIButton *)sender {
     TableViewController *tableVC = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:[NSBundle mainBundle]];
